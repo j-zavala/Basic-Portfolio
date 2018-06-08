@@ -1,0 +1,30 @@
+/* Grid Placement */
+
+body {
+    display: grid;
+    grid-template-columns: 100px 1fr 100px;
+    grid-template-rows: 100px 400px;
+}
+
+div.top {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+main {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+
+/* Other: color, font, etc. */
+
+div.top {
+    background-color: yellow;
+    font-size: 100%;
+}
+
+main {
+    /* background-color: aquamarine; */
+    background: linear-gradient(to bottom, #66ccff 0%, #ffcccc 100%);
+}
