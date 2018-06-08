@@ -2,29 +2,66 @@
 
 body {
     display: grid;
-    grid-template-columns: 100px 1fr 100px;
-    grid-template-rows: 100px 400px;
+    width: 100%;
+    height: 250px;
+    grid-template-areas: "head head nav"
+                         ".   main   ."
+                         "foot foot foot";
+    grid-template-rows: 50px 1fr 30px;
+    grid-template-columns: 150px 1fr 150px;
 }
 
-div.top {
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
+header {
+    grid-area: head;
 }
 
-main {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
+nav {
+    grid-area: nav;
+    background-color: #8ca0ff;
 }
 
 
 /* Other: color, font, etc. */
 
-div.top {
-    background-color: yellow;
-    font-size: 100%;
+body {
+    background-image: url(/Users/johnnyzavala/Desktop/bootcamp/Basic-Portfolio/assets/images/spring.png);
+    /* background-color: #79cb7e; */
 }
 
-main {
-    /* background-color: aquamarine; */
-    background: linear-gradient(to bottom, #66ccff 0%, #ffcccc 100%);
+header {
+    background-color: #ffffff;
 }
+
+/* Profile image */
+
+img {
+    object-fit: contain;
+    height: 100%;
+    width: auto;
+}
+
+div.image-crop {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+
+
+/* img {
+    display: inline;
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
+    /* border-radius: 50% */
+/* } */
+
+/* div.image-crop {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}  */
