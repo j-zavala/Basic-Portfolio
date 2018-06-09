@@ -24,7 +24,7 @@ nav {
 /* Other: color, font, etc. */
 
 body {
-    background-image: url(/Users/johnnyzavala/Desktop/bootcamp/Basic-Portfolio/assets/images/spring.png);
+    background-image: url("../images/spring.png");
     /* background-color: #79cb7e; */
 }
 
