@@ -1,67 +1,73 @@
-/* Grid Placement */
-
-body {
-    display: grid;
-    width: 100%;
-    height: 250px;
-    grid-template-areas: "head head nav"
-                         ".   main   ."
-                         "foot foot foot";
-    grid-template-rows: 50px 1fr 30px;
-    grid-template-columns: 150px 1fr 150px;
-}
-
-header {
-    grid-area: head;
-}
-
-nav {
-    grid-area: nav;
-    background-color: #8ca0ff;
-}
-
-
-/* Other: color, font, etc. */
-
 body {
     background-image: url("../images/spring.png");
-    /* background-color: #79cb7e; */
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif";
 }
 
-header {
-    background-color: #ffffff;
+/* THE NAVIGATION BAR */
+.fixed-top {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
 }
 
-/* Profile image */
-
-img {
-    object-fit: contain;
-    height: 100%;
-    width: auto;
+/* Links inside the navbar */
+.fixed-top a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
-div.image-crop {
-    width: 100px;
-    height: 100px;
+/* Change background on mouse-over */
+.fixed-top a:hover {
+    background: #ddd;
+    color: black;
+}
+
+
+
+
+
+
+
+/* GRID  */
+.container {
+    display: grid;
+    width: 960px;
+    height: 440px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr;
+    margin: 100px auto;
+}
+
+
+/* OTHER: color, font, etc. */
+
+
+
+/* PROFILE IMAGE */
+/* Cropping rectangular profile image & rounding edges */
+
+.image-crop {
+    display: inline-block;
     position: relative;
+    width: 250px;
+    height: 250px;
     overflow: hidden;
     border-radius: 50%;
-}
-
-
-
-/* img {
-    display: inline;
-    margin: 0 auto;
-    height: 100%;
+  }
+  
+  .image-crop img {
     width: auto;
-    /* border-radius: 50% */
-/* } */
+    height: 100%;
+    margin-left: -50px;
+    margin-bottom: -25px;
+  }
 
-/* div.image-crop {
-    width: 100px;
-    height: 100px;
-    position: relative;
-    overflow: hidden;
-    border-radius: 50%;
-}  */
