@@ -7,35 +7,32 @@ body {
 }
 
 /* THE NAVIGATION BAR */
-.fixed-top {
+.top-bar {
     overflow: hidden;
     background-color: #333;
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
+    position: fixed; 
+    top: 0; /* Positions the navbar at the top of the page */
     width: 100%; /* Full width */
+    height: 77px;
+
 }
 
 /* Links inside the navbar */
-.fixed-top a {
+.top-bar a {
     float: right;
     display: block;
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    margin-top: 20px;
 }
 
 /* Change background on mouse-over */
-.fixed-top a:hover {
+.top-bar a:hover {
     background: #ddd;
     color: black;
 }
-
-
-
-
-
-
 
 /* GRID  */
 .container {
@@ -45,11 +42,34 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: 100px 1fr;
     margin: 100px auto;
+    background-color: aqua;
 }
 
 
 /* OTHER: color, font, etc. */
 
+.top-bar h1.name {
+    position: absolute;
+    left: 360px;
+    width: 240px;
+    height: 77px;
+    color: #f2f2f2;
+    text-align: center;
+    background-color: #4aaaa5;
+    font-size: 30px;
+   line-height: 80px;
+}
+
+header {
+    display: flex;
+    height: 77px;
+}
+
+nav {
+    float: right;
+    height: 77px;
+    margin-right: 100px;
+}
 
 
 /* PROFILE IMAGE */
@@ -62,6 +82,7 @@ body {
     height: 250px;
     overflow: hidden;
     border-radius: 50%;
+    margin: 2%;
   }
   
   .image-crop img {
@@ -70,4 +91,12 @@ body {
     margin-left: -50px;
     margin-bottom: -25px;
   }
+
+
+  /* html {
+    box-sizing: border-box;
+}
+*, ::before, ::after {
+    box-sizing: inherit;
+} */
 
