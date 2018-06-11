@@ -1,0 +1,202 @@
+/* Universal */
+
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+  html {
+    box-sizing: border-box;
+  }
+
+/*  ********  */
+
+body {
+    background-image: url("../images/spring.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif";
+}
+
+hr {
+    display: block;
+    height: 10px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+    width: 20px;
+}
+
+/* THE NAVIGATION BAR */
+.top-bar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background: #eee;
+    padding: 20px;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed; 
+    top: 0; /* Positions the navbar at the top of the page */
+    width: 100%; /* Full width */
+    line-height: 1.6;
+	margin: 0;
+	min-height: 100vh;
+}
+
+
+
+/* Removes bullted list formatting */
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a {
+    /* color: #34495e; */
+    text-decoration: none;
+}
+
+.nav a {
+    padding: 10px 15px;
+    text-align: center;
+    display: block;
+    color: #ced7e1;
+    font-size: .99em;
+}
+
+.nav a:hover {
+	color: #4ce7e9;
+}
+
+
+
+
+/* Media queries */
+/* For the nav bar in small screens, divides into two rows */
+ @media all and (max-width: 600px) {
+  
+    /* Allows Flexbox layout to wrap */
+    .top-bar {
+      flex-wrap: wrap;
+    }
+    /* Each item takes up 50% of the available width, giving two items per row */
+    .top-bar > li {
+      flex-basis: 50%;
+    }
+  }
+
+
+ @media all and (max-width: 400px) {
+    .top-bar > li {
+      flex-basis: 100%;
+    }
+  }
+
+  
+
+@media (min-width: 769px) {
+    .top-bar,
+	.main-nav {
+		display: flex;
+	}
+	.top-bar {
+		flex-direction: column;
+		align-items: center;
+		width: 80%;
+		margin: 0 auto;
+		max-width: 1150px;
+}
+
+}
+
+@media (min-width: 1025px) {
+	.top-bar {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+}
+  /* ********* */
+
+
+
+
+
+.top-bar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed; 
+    top: 0; /* Positions the navbar at the top of the page */
+    width: 100%; /* Full width */
+}
+
+/* Links inside the navbar */
+.top-bar a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change background on mouse-over */
+.top-bar a:hover {
+    background: #ddd;
+    color: black;
+}
+
+/* GRID  */
+.container {
+    display: grid;
+    width: 960px;
+    height: 440px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr;
+    margin: 100px auto;
+    background-color: aqua;
+}
+
+
+/* OTHER: color, font, etc. */
+
+/* header {
+    position: absolute;
+    left: 360px;
+    width: 240px;
+    height: 44px;
+    color: #f2f2f2;
+    text-align: center;
+    background-color: #4aaaa5;
+} */
+
+
+/* PROFILE IMAGE */
+/* Cropping rectangular profile image & rounding edges */
+
+.image-crop {
+    display: inline-block;
+    position: relative;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+  
+  .image-crop img {
+    width: auto;
+    height: 100%;
+    margin-left: -50px;
+    margin-bottom: -25px;
+  }
+
+
+  /* html {
+    box-sizing: border-box;
+}
+*, ::before, ::after {
+    box-sizing: inherit;
+} */
+

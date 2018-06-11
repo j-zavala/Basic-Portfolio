@@ -41,8 +41,9 @@ body {
     height: 440px;
     grid-template-columns: 1fr;
     grid-template-rows: 100px 1fr;
-    margin: 100px auto;
-    background-color: aqua;
+    margin: 120px auto;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
 }
 
 
@@ -57,7 +58,7 @@ body {
     text-align: center;
     background-color: #4aaaa5;
     font-size: 30px;
-   line-height: 80px;
+    line-height: 80px;
 }
 
 header {
@@ -71,6 +72,26 @@ nav {
     margin-right: 355px;
 }
 
+main > h1 {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    color: #4aaaa5;
+    width: 150px;
+    height: 25px;
+    text-align: center;
+    margin: 58px 0px 0px 19px;
+    font-size: 30px;
+}
+
+hr {
+    display: block;
+    height: 10px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 15px auto 10px auto;
+    padding: 0;
+    width: 94%;
+}
+
 
 /* PROFILE IMAGE */
 /* Cropping rectangular profile image & rounding edges */
@@ -78,11 +99,11 @@ nav {
 .image-crop {
     display: inline-block;
     position: relative;
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     overflow: hidden;
-    border-radius: 50%;
-    margin: 2%;
+    /* border-radius: 50%; */
+    margin: 3% 7% 2% 3%;
   }
   
   .image-crop img {
