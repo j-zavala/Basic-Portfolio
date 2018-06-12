@@ -69,7 +69,7 @@ header {
 nav {
     float: right;
     height: 77px;
-    margin-right: 355px;
+    margin-left: 1080px;
 }
 
 main > h1 {
@@ -78,7 +78,7 @@ main > h1 {
     width: 150px;
     height: 25px;
     text-align: center;
-    margin: 58px 0px 0px 19px;
+    margin: 20px 0px 0px 19px;
     font-size: 30px;
 }
 
@@ -97,13 +97,13 @@ hr {
 /* Cropping rectangular profile image & rounding edges */
 
 .image-crop {
-    display: inline-block;
+    float:left;
     position: relative;
     width: 200px;
     height: 200px;
     overflow: hidden;
     /* border-radius: 50%; */
-    margin: 3% 7% 2% 3%;
+    margin: 1% 2% 2% 3%;
   }
   
   .image-crop img {
@@ -121,3 +121,27 @@ hr {
     box-sizing: inherit;
 } */
 
+footer {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed; 
+    bottom: 0; /* Positions the navbar at the top of the page */
+    width: 100%; /* Full width */
+    height: 77px;
+    border-top: 6px solid #4aaaa5;
+}
+
+
+/* Contact form  */
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
