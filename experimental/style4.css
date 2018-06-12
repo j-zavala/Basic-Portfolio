@@ -3,7 +3,7 @@ body {
     display: flex;
     justify-content: center;
     padding: 20px;
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif";
 }
 
 /* THE NAVIGATION BAR */
@@ -78,7 +78,7 @@ main > h1 {
     width: 150px;
     height: 25px;
     text-align: center;
-    margin: 20px 0px 0px 19px;
+    margin: 58px 0px 0px 19px;
     font-size: 30px;
 }
 
@@ -92,26 +92,21 @@ hr {
     width: 94%;
 }
 
-p {
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    font-size: 15px;
-}
-
 
 /* PROFILE IMAGE */
 /* Cropping rectangular profile image & rounding edges */
 
 .image-crop {
-    float:left;
+    display: inline-block;
     position: relative;
     width: 200px;
     height: 200px;
     overflow: hidden;
     /* border-radius: 50%; */
-    margin: 1% 2% 2% 3%;
+    margin: 3% 7% 2% 3%;
   }
   
-.image-crop img {
+  .image-crop img {
     width: auto;
     height: 100%;
     margin-left: -50px;
@@ -125,28 +120,4 @@ p {
 *, ::before, ::after {
     box-sizing: inherit;
 } */
-
-footer {
-    overflow: hidden;
-    background-color: #333;
-    position: fixed; 
-    bottom: 0; /* Positions the navbar at the top of the page */
-    width: 100%; /* Full width */
-    height: 77px;
-    border-top: 6px solid #4aaaa5;
-}
-
-/* Contact form  */
-
-/* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
-    width: 100%; /* Full width */
-    padding: 12px; /* Some padding */ 
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-}
 
