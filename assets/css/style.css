@@ -64,6 +64,7 @@ body {
 header {
     display: flex;
     height: 77px;
+    font-family: 'Georgia', Times, Times New Roman, serif;
 }
 
 nav {
@@ -73,7 +74,6 @@ nav {
 }
 
 main > h1 {
-    font-family: 'Georgia', Times, Times New Roman, serif;
     color: #4aaaa5;
     width: 150px;
     height: 25px;
